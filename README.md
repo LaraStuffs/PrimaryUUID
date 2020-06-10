@@ -1,7 +1,7 @@
 # LaraStuffs Primary UUID
 
 [![Packagist Version](https://img.shields.io/packagist/v/larastuffs/primary-uuid)](https://packagist.org/packages/larastuffs/primary-uuid)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/LaraStuffs/PrimaryUUID/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/LaraStuffs/PrimaryUUID/blob/master/LICENSE.md)
 
 #### this package provides a simple interface for using UUID as a primary key in models
 
@@ -12,7 +12,7 @@
 ## Installation
 Require this package with composer using the following command:
 ```bash
-composer require larastuffs/primary-uuid:^1.0
+composer require larastuffs/primary-uuid
 ```
 
 ## Usage
@@ -20,6 +20,7 @@ Follow the instructions to adapt your models and migrations
 
 ### Model Setup
 ```php
+<?php
 use ...;
 use LaraStuffs\PrimaryUUID\Eloquent\Concerns\UseUUIDAsPrimaryKey;
 
@@ -33,6 +34,7 @@ class MyModel extends Model {
 
 ### Migration Setup
 ```php
+<?php
 Schema::create('table_name', function (Blueprint $table) {
     $table->uuid('id')->primary();
 });
