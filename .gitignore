@@ -24,3 +24,6 @@ Homestead.json
 
 # PHPStorm
 .idea/
+
+# Composer
+composer.lock
