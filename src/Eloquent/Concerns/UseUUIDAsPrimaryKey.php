@@ -7,11 +7,13 @@ use Illuminate\Support\Str;
 /**
  * Trait UseUUIDAsPrimaryKey
  * @package LaraStuffs\PrimaryUUID\Eloquent\Concerns
+ * @phpcs:disable Commenting.FileComment
  */
 trait UseUUIDAsPrimaryKey
 {
     /**
      * Boot this traits on the model
+     * @return void
      */
     protected static function bootUseUUIDAsPrimaryKey()
     {
