@@ -1,7 +1,7 @@
 name: CI
-
+  
 on: [push]
-
+  
 jobs:
   build-test:
     runs-on: ubuntu-latest
@@ -9,5 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: php-actions/composer@v1 # or alternative dependency management
-    - uses: php-actions/phpunit@v1
-    # ... then your own project steps ...
+    - name: PHPUnit tests
+      uses: php-actions/phpunit@v1
+      with:
+        config: ./phpunit.xml
