@@ -7,7 +7,7 @@
 
 ## Requirements
  - PHP 7.2 or latest
- - Laravel 6.* | 7.*
+ - Laravel 6.* | 7.* | 8.*
 
 ## Installation
 Require this package with composer using the following command:
